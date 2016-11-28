@@ -1,7 +1,6 @@
 import React from "react";
-import Title from "./Header/Title";
 
-export default class Header extends React.Component {
+export default class Footer extends React.Component {
   constructor() {
     super();
     this.name = "hfeng";
@@ -9,7 +8,7 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <Title />
+        <header>Footer</header>
     );
   }
 }
