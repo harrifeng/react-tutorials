@@ -9,6 +9,9 @@ export default class Layout extends React.Component {
   }
 
   render() {
+    setTimeout(() => {
+      this.setState({name: Math.random()});
+    }, 1000);
     return (
         <div>
         {this.state.name}
