@@ -9,10 +9,6 @@ export default class Title extends React.Component {
   }
 
   render() {
-
-    setTimeout(() => {
-      this.setState({title: Math.random()});
-    }, 1000);
     return (
         <h1> {this.state.title} </h1>
     );
