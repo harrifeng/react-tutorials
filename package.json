@@ -1,13 +1,14 @@
 {
   "name": "react-tutorials",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-react-html-attrs": "^2.0.0",
