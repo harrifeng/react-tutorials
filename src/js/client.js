@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 class Layout extends React.Component {
-  getVal() {
-    return 5;
+  constructor() {
+    super();
+    this.name = Math.random();
   }
+
   render() {
     return (
-        <h1>It working {this.getVal()} now!</h1>
+        <h1>It's {this.name} now!</h1>
     );
   }
 }
