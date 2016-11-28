@@ -9,13 +9,11 @@ export default class Layout extends React.Component {
   }
 
   render() {
-    setTimeout(() => {
-      this.setState({name: Math.random()});
-    }, 1000);
+
+    const title = "welcome will";
     return (
         <div>
-        {this.state.name}
-        <Header />
+        <Header title = {title}/>
         <Footer />
         </div>
     );
