@@ -4,10 +4,10 @@ var webpack = require('webpack');
 module.exports = {
   context: __dirname + "/src",
   devtool: debug ? "inlin-sourcemap" : null,
-  entry: "./js/client.js",
+  entry: "./js/client.jsx",
   module: {
     loaders: [{
-      test: /\.js?$/,
+      test: /\.js|jsx$/,
       exclude: /(node_modules|bower_components)/,
       loader: 'babel-loader',
       query: {
@@ -19,6 +19,9 @@ module.exports = {
   output: {
     path: __dirname + "/src/",
     filename: "client.min.js"
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
