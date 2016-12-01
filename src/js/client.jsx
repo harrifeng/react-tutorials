@@ -7,7 +7,8 @@ class Toggle extends React.Component {
     this.state = {isToggleOn: true};
   }
 
-  handleClick() {
+  // property initializer syntax
+  handleClick = () => {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
@@ -15,7 +16,7 @@ class Toggle extends React.Component {
 
   render() {
     return (
-      <button onClick={(e) => this.handleClick(e)}>
+      <button onClick={this.handleClick}>
         {this.state.isToggleOn ? 'ON' : 'OFF'}
       </button>
     );
