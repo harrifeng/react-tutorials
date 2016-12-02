@@ -5,7 +5,7 @@ class NameForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 'Please write an essay about your DOM element.'
+      value: 'coconut'
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -25,8 +25,12 @@ class NameForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Name:
-          <textarea value ={this.state.value} onChange={this.handleChange} />
+          Pick your favorite La Croix flavor:
+          <select value={this.state.value} onChange={this.handleChange}>
+            <option value="grapefruit">GrapeFruit</option>
+            <option value="lime">Lime</option>
+            <option value="coconut">Coconut</option>
+          </select>
         </label>
         <input type="submit" value="Submit" />
       </form>
